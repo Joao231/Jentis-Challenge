@@ -106,7 +106,7 @@ publish a message to a topic and then the service-notifier would subscribe to th
 
 **Final answer**:
 
-The challenge description is quite comprehensive. However, it would be beneficial to clarify whether there are any specific requirements for database integration 
+The challenge description is quite comprehensive. However, it would be beneficial to clarify whether there are any specific requirements for database integration, 
 error handling in the API and how the notification service could be processed. 
 Additionally, consider including information about the expected scale of the application and any specific performance considerations. This would help in making 
 more informed design decisions.
