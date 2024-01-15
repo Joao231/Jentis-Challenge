@@ -3,10 +3,10 @@
 ## Define Book Properties:
 
 * **Title** - String
-  **Author** - String
+* **Author** - String
 * **ISBN** (The International Standard Book Number) - String
 * **Genre** - String
-* **Quantity** (in stock)- Number
+* **Quantity** (stock)- Number
 * **Price** - Number
 * **Published date** - Date
 
