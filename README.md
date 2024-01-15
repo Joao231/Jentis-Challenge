@@ -101,7 +101,7 @@ Discussion on potential scalability requirements and strategies.
 
 **Notification process**:
 
-The challenge does not clarify how this notification would happen. We can uso webhooks, cron jobs or even use a publish/subscribe system where our service would
+The challenge does not clarify how this notification would happen. We can use webhooks, cron jobs or even use a publish/subscribe system where our service would
 publish a message to a topic and then the service-notifier would subscribe to that topic and consume the message.
 
 **Final answer**:
