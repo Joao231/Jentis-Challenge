@@ -20,38 +20,33 @@
 * Path: /api/books
 * Request Body: JSON with book details (Title, Author, ISBN, Genre, Quantity in stock, Price, Published date)
 * Response: Confirmation message or error
-
-Example for testing: curl -X POST -H "Content-Type: application/json" -d '{"title": "Sample Book", "author": "John Doe", "isbn": "1234567890", "genre": "Fiction", "quantity": 30, "price": 29.99, "publishedDate": "2022-01-01"}' http://localhost:3000/api/books
+* Example for testing: curl -X POST -H "Content-Type: application/json" -d '{"title": "Sample Book", "author": "John Doe", "isbn": "1234567890", "genre": "Fiction", "quantity": 30, "price": 29.99, "publishedDate": "2022-01-01"}' http://localhost:3000/api/books
 
 2. Endpoint for Deleting Books:
 * Method: DELETE
 * Path: /api/books/{bookId}
 * Response: Confirmation message or error
-
-Example for testing:: curl -X DELETE -H "Content-Type: application/json" http://localhost:3000/api/books/{bookId}
+* Example for testing: curl -X DELETE -H "Content-Type: application/json" http://localhost:3000/api/books/{bookId}
 
 3. Endpoint for Retrieving Books:
 * Method: GET
 * Path: /api/books
 * Response: List of books or error
-
-Example for testing:: curl -X GET http://localhost:3000/api/books
+* Example for testing: curl -X GET http://localhost:3000/api/books
 
 4. Endpoint for adding stock to a specific Book when a delivery is made:
 * Method: PATCH
 * Path: /api/books/deliver/{bookId}
 * Request Body: JSON with book quantity deliver - Example: '{"quantity": 10}'
 * Response: Json resource with a success message and the updated book resource or failed message
-
-Example for testing:: curl -X PATCH -H "Content-Type: application/json" -d '{"quantity": 10}'  http://localhost:3000/api/books/deliver/{bookId}
+* Example for testing: curl -X PATCH -H "Content-Type: application/json" -d '{"quantity": 10}'  http://localhost:3000/api/books/deliver/{bookId}
 
 5. Endpoint for deleting stock to a specific Book when a sell is made:
 * Method: PATCH
 * Path: /api/books/sell/{bookId}
 * Request Body: JSON with book quantity sold
 * Response: Json with a success message and the updated book resource or failed message
-
-Example for testing:: curl -X PATCH -H "Content-Type: application/json" -d '{"quantity": 10}'  http://localhost:3000/api/books/sell/{bookId}
+* Example for testing: curl -X PATCH -H "Content-Type: application/json" -d '{"quantity": 10}'  http://localhost:3000/api/books/sell/{bookId}
 
 
 
