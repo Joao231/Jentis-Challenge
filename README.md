@@ -43,7 +43,7 @@ Example for testing:: curl -X GET http://localhost:3000/api/books
 * Request Body: JSON with book quantity deliver - Example: '{"quantity": 10}'
 * Response: Json resource with a success message and the updated book resource or failed message
 
-Example for testing:: curl -X PATCH -H "Content-Type: application/json" -d '{"quantity": 10}'  http://localhost:3000/api/books/sell/{bookId}
+Example for testing:: curl -X PATCH -H "Content-Type: application/json" -d '{"quantity": 10}'  http://localhost:3000/api/books/deliver/{bookId}
 
 5. Endpoint for deleting stock to a specific Book when a sell is made:
 * Method: PATCH
@@ -51,7 +51,7 @@ Example for testing:: curl -X PATCH -H "Content-Type: application/json" -d '{"qu
 * Request Body: JSON with book quantity sold
 * Response: Json with a success message and the updated book resource or failed message
 
-Example for testing:: curl -X PATCH -H "Content-Type: application/json" -d '{"quantity": 10}'  http://localhost:3000/api/books/receive/{bookId}
+Example for testing:: curl -X PATCH -H "Content-Type: application/json" -d '{"quantity": 10}'  http://localhost:3000/api/books/sell/{bookId}
 
 
 
